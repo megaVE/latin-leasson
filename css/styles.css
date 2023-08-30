@@ -1,0 +1,179 @@
+@import url("./reset.css");
+
+* {
+    /* border: solid 1px magenta !important;  */
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/sunrise-landscapes-nature-fog-calm-dreamy-lakes-1920x1200-nature-lakes-hd-art-wallpaper-preview.jpg');
+    background-size: cover;
+}
+
+#text-page{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 15px;
+    background-image: url('../img/grunge-paper-background.jpg');
+    border: groove black 5px;
+    border-top: none;
+}
+
+#sidebar-1, #sidebar-2{
+    z-index: 1;
+    width: calc(10% + 5px);
+    height: 100%;
+    position: fixed;
+    padding: 0 auto;
+}
+
+#sidebar-1{
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* overflow-y: scroll; */
+}
+
+#sidebar-2{
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#sidebar-1 a{
+    padding: 5px;
+    margin: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #ddd;
+} */
+
+header{
+    position: relative;
+    z-index: 2;
+    background-image: url('../img/02intonacopr_nt.jpg');
+    border-bottom: groove black 5px;
+}
+
+header h1{
+    text-shadow: 0px 0px 4px #ccc;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer button{
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+footer button:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+/* Fonts */
+
+h1, h2, h3, footer button{
+    font-family: 'Overlock SC', cursive;
+    text-align: center;
+}
+
+h4, h5, h6, header{
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    text-align:justify;
+}
+
+ul, p{
+    font-family: 'Lora', serif;
+    text-align:justify;
+}
+
+/* Font Size */
+
+h1{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2, footer button{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3, header{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 22px;
+}
+
+p, ul{
+    font-size: 20px;
+}
+
+/* Margin and Padding */
+
+h1, h2, h3{
+    padding: 10px 20px;
+}
+
+p{
+    padding: 5px 15px;
+}
+
+h4{
+    padding: 10px;
+}
+
+ul{
+    padding-left: 50px;
+}
+
+li{
+    padding: 5px;
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+/*  */
+
+ul{
+    list-style-type: none;
+}
+
+footer button, #sidebar-1 a, #sidebar-1 a:visited{
+    color: #ccc;
+    text-decoration: none;
+}
+
+#sidebar-1 a, #sidebar-1 a:visited{
+    color: burlywood;
+    /* -webkit-text-stroke: #fff 0.4px; */
+    text-shadow: 0px 0px 4px #777;
+}
